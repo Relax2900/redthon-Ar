@@ -1,0 +1,94 @@
+{
+  "name": "بــوت ريــدثـون",
+  "description": "ســورس ريـدثـون آلعــرب - قنــآة آلســورس - @FBBBEF",
+  "logo": "",
+  "keywords": [
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/Relax2900/redthon-Ar",
+  "website": "#TODO",
+  "success_url": "#TODO",
+  "env": {
+    "ALIVE_NAME": {
+      "description": "ضــع هنــآ آسـم حسـآبـك آلخـآص بـ تلـي",
+      "value": ""
+    },
+    "APP_ID": {
+      "description": "هـنا ضــع هنــآ آيبــي آيـــدي",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "ضــع هنــآ آيبــي هـــآش",
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": "ضــع هنــآ كــود تيـرمكـس",
+      "value": "",
+      "required": false
+    },
+    "TG_BOT_USERNAME": {
+      "description": " ضــع هنــآ معــرف آلبـوت",
+      "value": ""
+    },
+    "TG_BOT_TOKEN": {
+      "description": "ضــع هنــآ تــوكـن آلبــوت",
+      "value": ""
+    },
+    "COMMAND_HAND_LER": {
+      "description": "لآ تغيــرهـآ آبـــد",
+      "value": ".",
+      "required": false
+    },
+    "ENV": {
+      "description": "لآ تغيــرهـآ آبـــد",
+      "value": "ANYTHING",
+      "required": false
+    },
+    "HEROKU_API_KEY": {
+      "description": "ضــع هنــآ آيبــي هيــروكـو",
+      "value": ""
+    },
+    "HEROKU_APP_NAME": {
+      "description": "اآســم آلـ تطبيــق آلـي خليتــه آول شـي",
+      "value": ""
+    },
+    "DEFAULT_BIO": {
+      "description": "هنبــذه مـؤقتــه آلــي تــريــد تخليــها",
+      "value": "",
+      "required": false
+    },
+    "TZ": {
+      "description": "ضــع هنــآ منطقــه آلـزمنيـه آلخــآصــه بيــك",
+      "value": "Asia/Baghdad",
+      "required": false
+    },
+    "UPSTREAM_REPO": {
+      "description": "لآ تغيــرهـآ آبـــد",
+      "value": "redthon",
+      "required": false
+    }
+  },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-google-chrome"
+  },{
+    "url":"https://github.com/heroku/heroku-buildpack-chromedriver"
+  },{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
+}
